@@ -2,6 +2,11 @@ import React from "react";
 import logo from "./logo.svg";
 import Header from "./components/Header";
 import { BrowserRouter } from "react-router-dom";
+import {
+  QueryClient,
+  QueryClientProvider,
+  useQuery,
+} from "@tanstack/react-query";
 import "./App.css";
 
 function App() {
