@@ -1,26 +1,27 @@
-import Button from "@mui/material/Button";
-import { Link } from "react-router-dom";
+import { Box } from "@mui/material";
+import MyButton from "./ui/MyButton";
 
 const Header = () => {
   return (
-    <div>
-      <Button
+    <Box>
+      <MyButton
         variant="contained"
         color="primary"
-        sx={{ top: 20, left: 60 }}
-        component={Link}
-        to="/"
+        sx={{ marginTop: 3, marginLeft: 7.4 }}
+        href="/"
       >
         TOP
-      </Button>
-      <Button
+      </MyButton>
+      {/* TODO: ボタンを押したら、OAuthでログインする機能を実装する */}
+      {/* TODO: ログアウトボタンを横に追加するか、ログイン後ログアウトボタンに切り替える */}
+      <MyButton
         variant="contained"
         color="primary"
-        sx={{ position: "absolute", top: 20, right: 60 }}
+        sx={{ marginTop: 3, marginLeft: 155 }}
       >
         ログイン
-      </Button>
-    </div>
+      </MyButton>
+    </Box>
   );
 };
 
