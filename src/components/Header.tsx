@@ -1,9 +1,9 @@
-import { Box } from "@mui/material";
+import MyBox from "./ui/MyBox";
 import MyButton from "./ui/MyButton";
 
 const Header = () => {
   return (
-    <Box>
+    <MyBox>
       <MyButton
         variant="contained"
         color="primary"
@@ -21,7 +21,7 @@ const Header = () => {
       >
         ログイン
       </MyButton>
-    </Box>
+    </MyBox>
   );
 };
 
