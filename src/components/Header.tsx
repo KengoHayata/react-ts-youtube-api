@@ -1,27 +1,24 @@
-import MyBox from "./ui/MyBox";
+import MyAppBar from "./ui/MyAppBar";
 import MyButton from "./ui/MyButton";
 
 const Header = () => {
   return (
-    <MyBox>
-      <MyButton
-        variant="contained"
-        color="primary"
-        sx={{ marginTop: 3, marginLeft: 7.4 }}
-        href="/"
-      >
+    <MyAppBar
+      sx={{
+        backgroundColor: "cyan",
+        alignItems: "center",
+        justifyContent: "space-between",
+      }}
+    >
+      <MyButton variant="contained" color="primary" href="/" size="small">
         TOP
       </MyButton>
       {/* TODO: ボタンを押したら、OAuthでログインする機能を実装する */}
       {/* TODO: ログアウトボタンを横に追加するか、ログイン後ログアウトボタンに切り替える */}
-      <MyButton
-        variant="contained"
-        color="primary"
-        sx={{ marginTop: 3, marginLeft: 155 }}
-      >
+      <MyButton variant="contained" color="primary" size="small">
         ログイン
       </MyButton>
-    </MyBox>
+    </MyAppBar>
   );
 };
 
