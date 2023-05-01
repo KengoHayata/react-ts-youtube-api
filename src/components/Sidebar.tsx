@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const playlists = ["再生リスト名", "再生リスト名", "再生リスト名"];
 
-const Sidebar = () => {
+export const Sidebar = () => {
   return (
     <MyBox
       sx={{
@@ -30,5 +30,3 @@ const Sidebar = () => {
     </MyBox>
   );
 };
-
-export default Sidebar;

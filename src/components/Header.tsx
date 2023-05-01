@@ -2,7 +2,7 @@ import MyAppBar from "./ui/MyAppBar";
 import MyButton from "./ui/MyButton";
 import { Link } from "react-router-dom";
 
-const Header = () => {
+export const Header = () => {
   return (
     <MyAppBar
       sx={{
@@ -24,5 +24,3 @@ const Header = () => {
     </MyAppBar>
   );
 };
-
-export default Header;
