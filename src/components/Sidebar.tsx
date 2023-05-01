@@ -1,12 +1,8 @@
 import MyBox from "./ui/MyBox";
 import MyButton from "./ui/MyButton";
+import { Link } from "react-router-dom";
 
-const buttons = [
-  "再生リスト名",
-  "再生リスト名",
-  "再生リスト名",
-  "再生リスト作成",
-];
+const buttons = ["再生リスト名", "再生リスト名", "再生リスト名"];
 
 const Header = () => {
   return (
@@ -25,10 +21,16 @@ const Header = () => {
       }}
     >
       {buttons.map((text, index) => (
-        <MyButton key={index} variant="contained" color="warning">
-          {text}
-        </MyButton>
+        // 仮で /playlist に遷移させる
+        <Link to="/playlist">
+          <MyButton key={index} variant="contained" color="warning">
+            {text}
+          </MyButton>
+        </Link>
       ))}
+      <MyButton variant="contained" color="warning">
+        再生リスト名
+      </MyButton>
     </MyBox>
   );
 };
