@@ -2,12 +2,10 @@ import MyBox from "./ui/MyBox";
 import MyButton from "./ui/MyButton";
 import { Link } from "react-router-dom";
 
-const buttons = ["再生リスト名", "再生リスト名", "再生リスト名"];
+const playlists = ["再生リスト名", "再生リスト名", "再生リスト名"];
 
-const Header = () => {
+const Sidebar = () => {
   return (
-    // TODO: 再生リスト名を押下した時、再生リスト画面に遷移させる
-    // TODO: 再生リスト作成を押下した時、モーダルを表示させる
     <MyBox
       sx={{
         width: 200,
@@ -20,19 +18,17 @@ const Header = () => {
         gap: "30px",
       }}
     >
-      {buttons.map((text, index) => (
-        // 仮で /playlist に遷移させる
-        <Link to="/playlist">
-          <MyButton key={index} variant="contained" color="warning">
-            {text}
-          </MyButton>
-        </Link>
+      {playlists.map((text) => (
+        // TODO: 再生リスト名を押下した時、再生リスト画面に遷移させる
+        // 仮で /playlists/:id に遷移させる
+        <Link to="/playlists/:id">{text}</Link>
       ))}
+      {/* TODO: 再生リスト作成を押下した時、モーダルを表示させる */}
       <MyButton variant="contained" color="warning">
-        再生リスト名
+        再生リスト追加
       </MyButton>
     </MyBox>
   );
 };
 
-export default Header;
+export default Sidebar;
