@@ -30,7 +30,7 @@ export const AddPlayListButton = () => {
         >
           <TextField
             id="filled-basic"
-            label="Filled"
+            label="再生リスト名"
             variant="filled"
             sx={{
               backgroundColor: "white",
