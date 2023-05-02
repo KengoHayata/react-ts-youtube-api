@@ -1,10 +1,10 @@
 import MyBox from "./ui/MyBox";
-import MyButton from "./ui/MyButton";
 import { Link } from "react-router-dom";
+import { AddPlayListButton } from "./AddPlayListButton";
 
 const playlists = ["再生リスト名", "再生リスト名", "再生リスト名"];
 
-const Sidebar = () => {
+export const Sidebar = () => {
   return (
     <MyBox
       sx={{
@@ -24,11 +24,7 @@ const Sidebar = () => {
         <Link to="/playlists/:id">{text}</Link>
       ))}
       {/* TODO: 再生リスト作成を押下した時、モーダルを表示させる */}
-      <MyButton variant="contained" color="warning">
-        再生リスト追加
-      </MyButton>
+      <AddPlayListButton />
     </MyBox>
   );
 };
-
-export default Sidebar;
