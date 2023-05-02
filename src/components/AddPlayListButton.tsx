@@ -17,26 +17,28 @@ export const AddPlayListButton = () => {
       <MyModal
         open={open}
         onClose={handleClose}
-        aria-labelledby="modal-modal-title"
-        aria-describedby="modal-modal-description"
+        sx={{
+          height: "100vh",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
       >
-        <MyBox
-          sx={{
-            height: "100vh",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-          }}
-        >
+        <MyBox>
           <TextField
-            id="filled-basic"
+            id="add-playlist"
             label="再生リスト名"
             variant="filled"
             sx={{
               backgroundColor: "white",
             }}
           />
-          <MyButton variant="contained" color="warning" onClick={handleOpen}>
+          <MyButton
+            variant="contained"
+            color="warning"
+            onClick={handleOpen}
+            style={{ marginTop: "10px", marginLeft: "10px" }}
+          >
             作成
           </MyButton>
         </MyBox>
