@@ -1,4 +1,4 @@
-import { TextField } from "@mui/material";
+import { Card, CardContent, TextField } from "@mui/material";
 import React, { useState } from "react";
 import { MyModal } from "./ui/MyModal";
 import MyButton from "./ui/MyButton";
@@ -18,30 +18,42 @@ export const AddPlayListButton = () => {
         open={open}
         onClose={handleClose}
         sx={{
-          height: "100vh",
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
         }}
       >
-        <MyBox>
-          <TextField
-            id="add-playlist-field"
-            label="再生リスト名"
-            variant="filled"
+        <Card
+          sx={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            width: "40%",
+            height: "15%",
+          }}
+        >
+          <CardContent
             sx={{
-              backgroundColor: "white",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              width: "70%",
+              gap: "10px",
             }}
-          />
-          <MyButton
-            variant="contained"
-            color="warning"
-            onClick={handleOpen}
-            style={{ marginTop: "10px", marginLeft: "10px" }}
           >
-            作成
-          </MyButton>
-        </MyBox>
+            <TextField
+              id="add-playlist-field"
+              label="再生リスト名"
+              variant="filled"
+              sx={{
+                width: "70%",
+              }}
+            />
+            <MyButton variant="contained" color="warning" onClick={handleOpen}>
+              作成
+            </MyButton>
+          </CardContent>
+        </Card>
       </MyModal>
     </MyBox>
   );
