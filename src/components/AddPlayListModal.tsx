@@ -4,7 +4,7 @@ import { MyModal } from "./ui/MyModal";
 import MyButton from "./ui/MyButton";
 import MyBox from "./ui/MyBox";
 
-export const AddPlayListButton = () => {
+export const AddPlayListModal = () => {
   const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
@@ -12,7 +12,7 @@ export const AddPlayListButton = () => {
   return (
     <MyBox>
       <MyButton variant="contained" color="warning" onClick={handleOpen}>
-        再生リスト追加
+        追加
       </MyButton>
       <MyModal
         open={open}
@@ -23,21 +23,12 @@ export const AddPlayListButton = () => {
           justifyContent: "center",
         }}
       >
-        <Card
-          sx={{
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            width: "40%",
-            height: "15%",
-          }}
-        >
+        <Card>
           <CardContent
             sx={{
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
-              width: "70%",
               gap: "10px",
             }}
           >
@@ -45,9 +36,6 @@ export const AddPlayListButton = () => {
               id="add-playlist-field"
               label="再生リスト名"
               variant="filled"
-              sx={{
-                width: "70%",
-              }}
             />
             <MyButton variant="contained" color="warning" onClick={handleOpen}>
               作成
