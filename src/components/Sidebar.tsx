@@ -1,6 +1,6 @@
 import MyBox from "./ui/MyBox";
 import { Link } from "react-router-dom";
-import { AddPlayListButton } from "./AddPlayListButton";
+import { CreatePlayListModal } from "./CreatePlayListModal";
 
 const playlists = ["再生リスト名", "再生リスト名", "再生リスト名"];
 
@@ -24,7 +24,8 @@ export const Sidebar = () => {
         <Link to="/playlists/:id">{text}</Link>
       ))}
       {/* TODO: 再生リスト作成を押下した時、モーダルを表示させる */}
-      <AddPlayListButton />
+      {/* test */}
+      <CreatePlayListModal />
     </MyBox>
   );
 };
