@@ -37,9 +37,9 @@ export const AddPlayListModal = () => {
               label="再生リスト名"
               variant="filled"
             />
-            {/* <MyButton variant="contained" color="warning" onClick={handleOpen}>
+            <MyButton variant="contained" color="warning" onClick={handleOpen}>
               作成
-            </MyButton> */}
+            </MyButton>
           </CardContent>
         </Card>
       </MyModal>

@@ -23,31 +23,20 @@ export const CreatePlayListModal = () => {
           justifyContent: "center",
         }}
       >
-        <Card
-          sx={{
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            width: "40%",
-            height: "15%",
-          }}
-        >
+        <Card>
           <CardContent
             sx={{
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
-              width: "70%",
               gap: "10px",
+              padding: "50px",
             }}
           >
             <TextField
               id="add-playlist-field"
               label="再生リスト名"
               variant="filled"
-              sx={{
-                width: "70%",
-              }}
             />
             <MyButton variant="contained" color="warning" onClick={handleOpen}>
               作成
