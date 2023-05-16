@@ -23,14 +23,17 @@ export const CreatePlayListModal = () => {
           justifyContent: "center",
         }}
       >
-        <Card>
+        <Card
+          sx={{
+            padding: "30px 100px",
+          }}
+        >
           <CardContent
             sx={{
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
               gap: "10px",
-              padding: "50px",
             }}
           >
             <TextField
