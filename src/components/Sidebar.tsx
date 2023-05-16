@@ -24,7 +24,6 @@ export const Sidebar = () => {
         <Link to="/playlists/:id">{text}</Link>
       ))}
       {/* TODO: 再生リスト作成を押下した時、モーダルを表示させる */}
-      {/* testtest */}
       <CreatePlayListModal />
     </MyBox>
   );
