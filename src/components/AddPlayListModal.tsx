@@ -23,7 +23,11 @@ export const AddPlayListModal = () => {
           justifyContent: "center",
         }}
       >
-        <Card>
+        <Card
+          sx={{
+            padding: "30px 100px",
+          }}
+        >
           <CardContent
             sx={{
               display: "flex",
