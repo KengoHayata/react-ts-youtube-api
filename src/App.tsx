@@ -8,9 +8,11 @@ export function App() {
   return (
     <BrowserRouter>
       <Header />
-      {/* TODO: サイドバーはログイン時のみ表示させる */}
-      <Sidebar />
-      <ShowVideoIndex />
+      <div style={{ display: "flex" }}>
+        {/* TODO: サイドバーはログイン時のみ表示させる */}
+        <Sidebar />
+        <ShowVideoIndex />
+      </div>
     </BrowserRouter>
   );
 }
