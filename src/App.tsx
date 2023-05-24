@@ -12,7 +12,7 @@ export function App() {
       <div style={{ display: "flex" }}>
         {/* TODO: サイドバーはログイン時のみ表示させる */}
         <Sidebar />
-        <Container maxWidth="lg" sx={{ marginTop: 10 }}>
+        <Container maxWidth="lg" sx={{ marginTop: 12 }}>
           <ShowVideoIndex />
         </Container>
       </div>

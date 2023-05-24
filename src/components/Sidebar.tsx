@@ -9,7 +9,7 @@ export const Sidebar = () => {
     <MyBox
       sx={{
         width: 200,
-        marginTop: 10,
+        marginTop: 12,
         padding: 3,
         display: "flex",
         flexDirection: "column",
