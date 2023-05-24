@@ -1,16 +1,15 @@
-import axios from "axios";
 import MyAppBar from "./ui/MyAppBar";
 import MyButton from "./ui/MyButton";
 import { Link } from "react-router-dom";
-import { useState } from "react";
 
 export const Header = () => {
   return (
     <MyAppBar
       sx={{
-        backgroundColor: "cyan",
+        backgroundColor: "#C0C0C0",
         alignItems: "center",
         justifyContent: "space-between",
+        minHeight: 60,
       }}
     >
       <Link to="/">
