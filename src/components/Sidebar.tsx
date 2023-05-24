@@ -9,12 +9,12 @@ export const Sidebar = () => {
     <MyBox
       sx={{
         width: 200,
-        marginTop: 8,
+        marginTop: 10,
         padding: 3,
         display: "flex",
         flexDirection: "column",
         justifyContent: "space-between",
-        backgroundColor: "green",
+        backgroundColor: "#C0C0C0",
         gap: "30px",
       }}
     >
