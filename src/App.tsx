@@ -3,6 +3,7 @@ import { Sidebar } from "./components/Sidebar";
 import { ShowVideoIndex } from "./components/ShowVideoIndex";
 import { BrowserRouter } from "react-router-dom";
 import "./App.css";
+import { Container } from "@mui/material";
 
 export function App() {
   return (
@@ -11,7 +12,9 @@ export function App() {
       <div style={{ display: "flex" }}>
         {/* TODO: サイドバーはログイン時のみ表示させる */}
         <Sidebar />
-        <ShowVideoIndex />
+        <Container maxWidth="lg" sx={{ marginTop: 10 }}>
+          <ShowVideoIndex />
+        </Container>
       </div>
     </BrowserRouter>
   );
